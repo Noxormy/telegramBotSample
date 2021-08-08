@@ -1,0 +1,5 @@
+{
+  "start_response": "Привет!",
+  "locale_changed": "Окей, теперь можем говорить по-русски :)",
+  "locale_change_error": "Что-то пошло не так"
+}

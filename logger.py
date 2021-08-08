@@ -1,8 +1,8 @@
 import logging
 
-COMMON_FORMAT = '%(levelname)s: (%(filename)s:%(lineno)d): %(message)s'
+COMMON_FORMAT = "%(levelname)s: (%(filename)s:%(lineno)d): %(message)s"
 
-logger = logging.getLogger('common')
+logger = logging.getLogger("common")
 logger.setLevel(logging.DEBUG)
 
 
@@ -17,10 +17,10 @@ class CustomHandler(logging.Handler):
 
 
 def init_logger():
-    fh = logging.FileHandler('logs.txt')
+    fh = logging.FileHandler("logs.txt")
     fh.setLevel(logging.DEBUG)
     formatter = logging.Formatter(
-        '%(asctime)s %(levelname)s: (%(filename)s:%(lineno)d %(threadName)s): %(message)s',
+        "%(asctime)s %(levelname)s: (%(filename)s:%(lineno)d %(threadName)s): %(message)s",
         datefmt="%m/%d/%Y %H:%M:%S"
     )
     fh.setFormatter(formatter)
@@ -41,5 +41,5 @@ def add_handler(cb, level=logging.ERROR, logs_format=COMMON_FORMAT):
     logger.addHandler(ch)
 
 
-if __name__ == 'logger':
+if __name__ == "logger":
     init_logger()

@@ -1,0 +1,5 @@
+{
+  "start_response": "Hello!",
+  "locale_changed": "Fine, lets speak in english",
+  "locale_change_error": "Something went wrong"
+}
