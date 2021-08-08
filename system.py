@@ -4,7 +4,7 @@ import telebot
 from localization import localization
 from logger import logger, add_handler
 
-API_KEY = "1917406526:AAERd_pOLx5aF4AAyBlINTgajNtSD_-1_QI"
+API_KEY = "API_KEY"
 bot = telebot.TeleBot(API_KEY, parse_mode=None)
 
 
