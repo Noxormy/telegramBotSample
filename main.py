@@ -1,3 +1,4 @@
+import traceback
 from logger import logger
 from system import bot
 import messages
@@ -11,6 +12,7 @@ def main():
         pass
     except Exception as e:
         logger.info("bot stopped")
+        traceback.print_exc()
         logger.critical(e)
     
 
